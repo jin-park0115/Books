@@ -10,7 +10,7 @@ export default function Home() {
         Next.JS로 구현하는 도서 검색 및 개인 서재 관리 앱
       </p>
 
-      <div className="flex space-x-4">
+      <div className="flex flex-wrap justify-center gap-4">
         <Link
           href="/search"
           className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-150 shadow-md"
@@ -22,6 +22,12 @@ export default function Home() {
           className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-150 shadow-md"
         >
           내 서재 보기
+        </Link>
+        <Link
+          href="/chat"
+          className="bg-white text-indigo-700 border border-indigo-200 hover:border-indigo-400 font-bold py-3 px-6 rounded-lg transition duration-150 shadow-md"
+        >
+          AI 추천 받기
         </Link>
       </div>
 

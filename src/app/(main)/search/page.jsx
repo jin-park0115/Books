@@ -34,7 +34,7 @@ export default async function SearchPage({ searchParams }) {
 
       {currentQuery && (
         <p className="text-xl mb-4">
-          **"{currentQuery}"**에 대한 검색 결과 ({books.length}건)
+          <span className="font-semibold">&quot;{currentQuery}&quot;</span>에 대한 검색 결과 ({books.length}건)
         </p>
       )}
 

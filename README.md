@@ -29,6 +29,29 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## OpenAI 기반 챗봇 실행 방법
+
+1. `.env.local` 파일에 API 키를 설정합니다.
+
+```
+OPENAI_API_KEY=sk-xxx
+# 선택: GOOGLE_BOOKS_API_KEY=your-key
+```
+
+2. 의존성을 설치합니다.
+
+```bash
+npm install
+```
+
+3. 개발 서버 실행:
+
+```bash
+npm run dev
+```
+
+`/chat` 페이지에서 메시지를 입력하면 OpenAI `gpt-4o-mini`와 Google Books 데이터를 조합한 추천을 받을 수 있습니다.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
